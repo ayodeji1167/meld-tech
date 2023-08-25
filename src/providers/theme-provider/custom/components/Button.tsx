@@ -8,7 +8,7 @@ export const Button: ComponentDefaultProps = {
     variant: 'solid',
     borderRadius: '8px',
     fontFamily: 'body',
-    minHeight: '45px',
+    minHeight: '10px !important',
     fontSize: { base: '14px', md: '16px' },
   },
 
@@ -17,15 +17,16 @@ export const Button: ComponentDefaultProps = {
       color: 'white',
       bgColor: 'primary.500',
       borderRadius:'6px',
-      width: { md: '130px' },
+      minWidth: {base:'124px' ,md: '150px' },
+      minHeight:{base:'10px',md:'10px'},
       _focus: {
         boxShadow:
           '28px 40px 20px rgba(24, 19, 162, 0.03), 16px 23px 17px rgba(24, 19, 162, 0.1), 7px 10px 12px rgba(24, 19, 162, 0.17), 2px 3px 7px rgba(24, 19, 162, 0.2), 0px 0px 0px rgba(24, 19, 162, 0.2)',
-        bgColor: 'brand.primary.500',
-        borderRadius: '10px',
-      },
+          bgColor: 'rgba(255, 176, 19, 1)',
+        },
       _hover: {
-           bgColor: 'primary.500',
+           bgColor: 'rgba(255, 176, 19, 1)',
+           color:'black'
 
       },
     },

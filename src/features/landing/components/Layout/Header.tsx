@@ -31,36 +31,43 @@ export default function WithSubnavigation() {
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
           py={{ base: 2 }}
-          px={{ base: 4 }}
           align={'center'}
-          w={{ base: '93%', md: '90' }}
-          maxW={'100vw'}
+          w={{ base: '93%', md: '90%' }}
+          maxW={'8xl'}
           mx={'auto'}
         >
-          <Flex
-            flex={{ base: 1, md: 'auto' }}
-            ml={{ base: -2 }}
-            display={{ base: 'flex', md: 'none' }}
-            align={'center'}
-          >
-            <IconButton
-              onClick={onToggle}
-              icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
-              variant={'ghost'}
-              aria-label={'Toggle Navigation'}
-            />
-          </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
             <Box>
-              <Logo to="/" withText={true} />
+              <Logo w={{ base: '2.5rem', md: '4rem' }} to="/" withText={true} />
             </Box>
+            <Flex
+              flex={{ base: 1, lg: 'auto' }}
+              justifyContent={'flex-end'}
+              display={{ base: 'flex', lg: 'none' }}
+              align={'center'}
+            >
+              <IconButton
+                onClick={onToggle}
+                icon={isOpen ? <CloseIcon w={6} h={6} /> : <HamburgerIcon w={8} h={8} />}
+                variant={'ghost'}
+                aria-label={'Toggle Navigation'}
+                color={'primary.500'}
+              />
+            </Flex>
 
-            <Flex display={{ base: 'none', md: 'flex' }} ml={'auto'}>
+            <Flex display={{ base: 'none', lg: 'flex' }} ml={'auto'}>
               <DesktopNav />
             </Flex>
           </Flex>
 
-          <Stack ml={8} flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
+          <Stack
+            ml={8}
+            flex={{ base: 1, md: 0 }}
+            justify={'flex-end'}
+            direction={'row'}
+            spacing={6}
+            display={{ base: 'none', lg: 'block' }}
+          >
             <Button variant={'primary'}>Apply Now</Button>
           </Stack>
         </Flex>
@@ -79,7 +86,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
   return (
-    <Flex align={'center'} gap={{base:4,md:8}}>
+    <Flex align={'center'} gap={{ base: 4, md: 8 }}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -88,13 +95,14 @@ const DesktopNav = () => {
                 as="a"
                 p={2}
                 href={navItem.href ?? '#'}
-                fontSize={'sm'}
+                fontFamily={` 'Montserrat', 'sans-serif'`}
                 fontWeight={500}
                 color={linkColor}
                 _hover={{
                   textDecoration: 'none',
                   color: linkHoverColor,
                 }}
+                fontSize={{ base: '14px', lg: '16px' }}
               >
                 {navItem.label}
               </Box>
@@ -159,10 +167,12 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 
 const MobileNav = () => {
   return (
-    <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
+    <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ lg: 'none' }}>
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
+                  {/* <Button variant={'primary'}>Apply Now</Button> */}
+
     </Stack>
   );
 };

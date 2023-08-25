@@ -1,6 +1,6 @@
 const fonts = {
-  heading: `'BR Firma',sans-serif`,
-  body: `'DM Sans',sans-serif`,
+  heading: `'Hind', sans-serif`,
+  body: `'Nunito Sans', sans-serif`,
 };
 
 const fontSizes = {
@@ -12,7 +12,7 @@ const fontSizes = {
   '2xl': '26px',
   '3xl': '30px',
   '4xl': '34px',
-  '5xl': '38px',
+  '5xl': '138px',
   '6xl': '50px',
   '7xl': '70px',
 };
@@ -25,50 +25,169 @@ const fontWeights = {
 };
 
 const textStyles = {
-  h1: {
+  // h1: {
+  //   fontSize: ['4xl', '5xl'],
+  //   fontWeight: 'bold',
+  //   lineHeight: 'auto',
+  //   fontFamily: 'heading',
+  // },
+  // h2: {
+  //   fontSize: ['3xl', '4xl'],
+  //   fontWeight: 'semibold',
+  //   fontFamily: 'heading',
+  //   lineHeight: 'auto',
+  // },
+  // h3: {
+  //   fontSize: ['2xl', '3xl'],
+  //   fontWeight: 'semibold',
+  //   lineHeight: 'auto',
+  //   fontFamily: 'heading',
+  // },
+  // h4: {
+  //   fontSize: ['xl', '2xl'],
+  //   fontWeight: 'semibold',
+  //   fontFamily: 'heading',
+  //   lineHeight: 'auto',
+  // },
+  // h5: {
+  //   fontSize: ['lg', 'xl'],
+  //   fontWeight: 'semibold',
+  //   lineHeight: 'auto',
+  //   fontFamily: 'heading',
+  // },
+  // p: {
+  //   fontSize: 'md',
+  //   fontWeight: 'regular',
+  //   lineHeight: '165%',
+  //   fontFamily: 'body',
+  // },
+
+  //=========================HEADING=======================
+  'h1-regular': {
+    fontSize: ['4xl', '5xl'],
+    fontWeight: 'medium',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h1-semibold': {
+    fontSize: ['4xl', '5xl'],
+    fontWeight: 'semi-bold',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h1-bold': {
     fontSize: ['4xl', '5xl'],
     fontWeight: 'bold',
     lineHeight: 'auto',
     fontFamily: 'heading',
   },
-  h2: {
+  'h2-regular': {
+    fontSize: ['3xl', '4xl'],
+    fontWeight: 'medium',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h2-semibold': {
+    fontSize: ['3xl', '4xl'],
+    fontWeight: 'semi-bold',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h2-bold': {
     fontSize: ['3xl', '4xl'],
     fontWeight: 'bold',
-    fontFamily: 'heading',
     lineHeight: 'auto',
+    fontFamily: 'heading',
   },
-  h3: {
+  'h3-regular': {
     fontSize: ['2xl', '3xl'],
-    fontWeight: 'semibold',
+    fontWeight: 'medium',
     lineHeight: 'auto',
     fontFamily: 'heading',
   },
-  h4: {
+  'h3-semibold': {
+    fontSize: ['2xl', '3xl'],
+    fontWeight: 'semi-bold',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h3-bold': {
+    fontSize: ['2xl', '3xl'],
+    fontWeight: 'bold',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h4-regular': {
+    fontSize: ['xl', '2xl'],
+    fontWeight: 'medium',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h4-semibold': {
     fontSize: ['xl', '2xl'],
     fontWeight: 'semibold',
-    fontFamily: 'heading',
     lineHeight: 'auto',
+    fontFamily: 'heading',
   },
-  h5: {
+  'h4-bold': {
+    fontSize: ['xl', '2xl'],
+    fontWeight: 'bold',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h5-regular': {
+    fontSize: ['lg', 'xl'],
+    fontWeight: 'medium',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h5-semibold': {
     fontSize: ['lg', 'xl'],
     fontWeight: 'semibold',
     lineHeight: 'auto',
     fontFamily: 'heading',
   },
-  p: {
-    fontSize: { base: '14px', md: '16px' },
-    fontWeight: 'regular',
-    lineHeight: '165%',
-    fontFamily: 'body',
-  },
-  subHeading: {
-    fontSize: { base: '20px', md: '26px' },
+  'h5-bold': {
+    fontSize: ['lg', 'xl'],
     fontWeight: 'bold',
-    textAlign: 'center',
+    lineHeight: 'auto',
     fontFamily: 'heading',
   },
-  small: {
-    fontSize: { base: '10px', md: '12px' },
+  // =======================BODY =================
+  'p-regular': {
+    fontSize: ['sm', 'md'],
+    fontWeight: 'normal',
+    lineHeight: 'auto',
+    fontFamily: 'body',
+  },
+  'p-semibold': {
+    fontSize: ['sm', 'md'],
+    fontWeight: 'semibold',
+    lineHeight: 'auto',
+    fontFamily: 'body',
+  },
+  'p-bold': {
+    fontSize: ['sm', 'md'],
+    fontWeight: 'bold',
+    lineHeight: 'auto',
+    fontFamily: 'body',
+  },
+  'small-regular': {
+    fontSize: ['xs', 'sm'],
+    fontWeight: 'medium',
+    lineHeight: 'auto',
+    fontFamily: 'body',
+  },
+  'small-semibold': {
+    fontSize: ['xs', 'sm'],
+    fontWeight: 'semibold',
+    lineHeight: 'auto',
+    fontFamily: 'body',
+  },
+  'small-bold': {
+    fontSize: ['xs', 'sm'],
+    fontWeight: 'bold',
+    lineHeight: 'auto',
     fontFamily: 'body',
   },
 };

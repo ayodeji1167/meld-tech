@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 export const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <Stack pos="relative" overflowX={'hidden'} minH={'100vh'} justifyContent={'space-between'}>
+    <Stack pos="relative" overflowX={'hidden'} minH={'100vh'} >
       <Header />
 
       {children}

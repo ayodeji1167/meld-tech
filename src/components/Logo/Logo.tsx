@@ -24,6 +24,7 @@ export const Logo = (props: LogoProps) => {
             fontFamily={`'Montserrat', 'sans-serif'`}
             textDecoration={'none'}
             justifyContent={'center'}
+            fontSize={{base:'15px',md:'18px'}}
           >
             <Text>MELDTECH</Text>
             <Text>ACADEMY</Text>
