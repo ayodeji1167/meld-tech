@@ -60,10 +60,10 @@ export default function WhyUsSection() {
       mt={{ base: '5rem', lg: '10rem' }}
       mb={'8'}
     >
-      <Box >
+      <Box>
         <SideBar currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} />
       </Box>
-      <Box flex={1} >
+      <Box flex={1}>
         <AnimatePresence mode="popLayout">
           {currentSlide === 'Why Us' && (
             <motion.div key={currentSlide} {...animationProps}>

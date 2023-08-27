@@ -5,7 +5,7 @@ import check from '@/assets/landingPage/whyus/check.png';
 function WhyUsItems({ value }: { value: string }) {
   return (
     <Flex alignItems={'center'} gap={'4'}>
-      <Box maxW={{base:'1rem',md:'2rem'}} >
+      <Box maxW={{ base: '1rem', md: '2rem' }}>
         <img src={check} alt="check" />
       </Box>
 

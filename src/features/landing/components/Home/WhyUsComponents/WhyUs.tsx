@@ -6,7 +6,7 @@ import check from '@/assets/landingPage/whyus/check.png';
 function WhyUsItems({ value }: { value: string }) {
   return (
     <Flex alignItems={'center'} gap={'4'}>
-      <Box maxW={{base:'1rem',md:'2rem'}} >
+      <Box maxW={{ base: '1rem', md: '2rem' }}>
         <img width={'100%'} src={check} alt="check" />
       </Box>
 
@@ -20,9 +20,9 @@ export default function WhyUs() {
       flexDir={{ base: 'column', md: 'row' }}
       alignItems={{ base: 'flex-start', md: 'center' }}
       justifyContent={'space-between'}
-      gap={{base:'8',md:'0'}}
+      gap={{ base: '8', md: '0' }}
     >
-      <Stack order={{base:2,md:1}} spacing={{ base: '4', md: '6' }} alignItems={'flex-start'}>
+      <Stack order={{ base: 2, md: 1 }} spacing={{ base: '4', md: '6' }} alignItems={'flex-start'}>
         <Text as={'h2'} textStyle={'h3-bold'}>
           Why Us
         </Text>
@@ -32,10 +32,13 @@ export default function WhyUs() {
           <WhyUsItems value="Diverse Course Offerings and Tailored Pathways" />
           <WhyUsItems value="Supportive Community and Career Assistance" />
         </Stack>
-        <Button variant={'primary'}> <Text textStyle={"p-regular"}> Apply Now</Text></Button>
+        <Button variant={'primary'}>
+          {' '}
+          <Text textStyle={'p-regular'}> Apply Now</Text>
+        </Button>
       </Stack>
-      <Box order={{base:1,md:2}} maxW={{base:'20rem',lg:'30rem'}}>
-        <img  src={studyGroup} alt="studyGroup" />
+      <Box order={{ base: 1, md: 2 }} maxW={{ base: '20rem', lg: '30rem' }}>
+        <img src={studyGroup} alt="studyGroup" />
       </Box>
     </Flex>
   );

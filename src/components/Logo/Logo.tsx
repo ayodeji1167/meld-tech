@@ -1,4 +1,4 @@
-import { Link, type LinkProps, Image, type ImageProps, Flex, Stack, Text } from '@chakra-ui/react';
+import { Link, type LinkProps, Image, type ImageProps, Flex, Text } from '@chakra-ui/react';
 import { ReactNode } from 'react';
 import { Link as ReactLink } from 'react-router-dom';
 import logo from '@/assets/logo.png';
@@ -16,7 +16,7 @@ export const Logo = (props: LogoProps) => {
 
   function PlainLogo() {
     return (
-      <Flex alignItems={'center'} gap={props.removeAcademy ? '4':''}>
+      <Flex alignItems={'center'} gap={props.removeAcademy ? '4' : ''}>
         <Image src={logo} aria-label={`logo`} {...props} />
         {withText && (
           <Flex

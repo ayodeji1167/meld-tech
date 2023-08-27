@@ -16,18 +16,17 @@ export const Button: ComponentDefaultProps = {
     primary: {
       color: 'white',
       bgColor: 'primary.500',
-      borderRadius:'6px',
-      minWidth: {base:'124px' ,md: '150px' },
-      minHeight:{base:'10px',md:'10px'},
+      borderRadius: '6px',
+      minWidth: { base: '124px', md: '150px' },
+      minHeight: { base: '10px', md: '10px' },
       _focus: {
         boxShadow:
           '28px 40px 20px rgba(24, 19, 162, 0.03), 16px 23px 17px rgba(24, 19, 162, 0.1), 7px 10px 12px rgba(24, 19, 162, 0.17), 2px 3px 7px rgba(24, 19, 162, 0.2), 0px 0px 0px rgba(24, 19, 162, 0.2)',
-          bgColor: 'rgba(255, 176, 19, 1)',
-        },
+        bgColor: 'rgba(255, 176, 19, 1)',
+      },
       _hover: {
-           bgColor: 'rgba(255, 176, 19, 1)',
-           color:'black'
-
+        bgColor: 'rgba(255, 176, 19, 1)',
+        color: 'black',
       },
     },
     outline: {

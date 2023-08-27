@@ -1,4 +1,4 @@
-import { Box, Button, Center, Flex, Heading, Stack, Text } from '@chakra-ui/react';
+import { Box, Button, Center, Flex, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import heroImg from '@/assets/landingPage/hero/hero-img.png';
 import rate from '@/assets/landingPage/hero/rate.png';
@@ -9,7 +9,6 @@ export default function Hero() {
       gap={{ base: '2rem', lg: 'none' }}
       pt={{ base: '8', md: '16' }}
       direction={{ base: 'column', lg: 'row' }}
-     
       position={'relative'}
     >
       <Stack alignItems={'flex-start'} spacing={{ base: '4', md: '6' }} flex={1}>
@@ -28,7 +27,9 @@ export default function Hero() {
           software engineering.
         </Text>
 
-        <Button variant={'primary'}><Text textStyle={"p-regular"}> Apply Now</Text></Button>
+        <Button variant={'primary'}>
+          <Text textStyle={'p-regular'}> Apply Now</Text>
+        </Button>
       </Stack>
 
       <Box flex={1.1} pos={'relative'}>

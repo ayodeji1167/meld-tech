@@ -19,7 +19,7 @@ function HowToStartItem({
   description: string;
 }) {
   return (
-    <Stack spacing={{base:'4',lg:'8'}} alignItems={'center'} position={'relative'}>
+    <Stack spacing={{ base: '4', lg: '8' }} alignItems={'center'} position={'relative'}>
       <Box maxW={{ base: '3rem', md: '4rem', lg: '8rem' }}>
         <img src={image} alt={image} />
       </Box>
@@ -55,7 +55,7 @@ export default function HowToStart() {
         learning real employable skills that top companies want{' '}
       </Text>
 
-      <SimpleGrid mt={'8'} gap={'12'} columns={{base:1,md:2,lg:4}}>
+      <SimpleGrid mt={'8'} gap={'12'} columns={{ base: 1, md: 2, lg: 4 }}>
         <GridItem>
           <HowToStartItem
             image={note}

@@ -1,10 +1,11 @@
-import { Box, Button, Center, Flex, GridItem, SimpleGrid, Text } from '@chakra-ui/react';
+import { Box, Button, Center, GridItem, SimpleGrid, Text } from '@chakra-ui/react';
 import illustration from '@/assets/landingPage/footer/illustration.png';
 
 export default function FooterBanner() {
   return (
     <SimpleGrid
       maxW={'6xl'}
+      w={{ base: '93%', md: '90%' }}
       mx={'auto'}
       alignItems={'center'}
       h={{ base: 'auto', md: '10rem' }}
@@ -15,8 +16,7 @@ export default function FooterBanner() {
       columns={{ base: 1, md: 3 }}
       position={'relative'}
       top={'4rem'}
-      w={{ base: '93%', md: '90%' }}
-      gap={{base:'4',md:'1px'}}
+      gap={{ base: '4', md: '1px' }}
     >
       <GridItem>
         <Text textAlign={{ base: 'center', md: 'left' }} textStyle={'h5-bold'} color={'white'}>

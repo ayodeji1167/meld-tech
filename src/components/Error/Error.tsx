@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Heading, Text, VStack } from '@chakra-ui/react';
 import { Link, useRouteError } from 'react-router-dom';
 
-export default function RouteError (){
+export default function RouteError() {
   const error: any = useRouteError();
 
   return (
@@ -62,4 +62,4 @@ export default function RouteError (){
       </Flex>
     </Box>
   );
-};
+}

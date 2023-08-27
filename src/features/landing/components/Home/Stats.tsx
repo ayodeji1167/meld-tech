@@ -7,7 +7,7 @@ import certificate from '@/assets/landingPage/stats/certificate.png';
 function StatsItem({ image, value, name }: { image: string; value: string; name: string }) {
   return (
     <Flex alignItems={'center'} gap={'4'}>
-      <Box w={{base:'2rem',lg:'3rem'}}>
+      <Box w={{ base: '2rem', lg: '3rem' }}>
         <img height={'100%'} width={'100%'} src={image} alt="img" />
       </Box>
       <Stack color={'white'} spacing={'0'}>

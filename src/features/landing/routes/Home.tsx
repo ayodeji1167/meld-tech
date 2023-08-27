@@ -4,7 +4,6 @@ import Hero from '../components/Home/Hero';
 import { Box } from '@chakra-ui/react';
 import Offer from '../components/Home/Offer';
 import WhoWeAre from '../components/Home/WhoWeAre';
-import CoursesStack from '../components/Home/CoursesStack';
 import Stats from '../components/Home/Stats';
 import WhyUsSection from '../components/Home/WhyUsSection';
 import Faq from '../components/Home/Faq';

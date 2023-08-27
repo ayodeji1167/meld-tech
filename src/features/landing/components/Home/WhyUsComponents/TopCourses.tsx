@@ -24,10 +24,13 @@ function CourseCard({
   return (
     <Box
       px="6"
-      pt={{base:'4',md:'8'}}
+      pt={{ base: '4', md: '8' }}
       borderRadius={'10px'}
-      h={{base:'17rem',md:'20rem'}}
-      shadow={{base:" 2px 4px 3px 0px rgba(0, 0, 0, 0.1)",md:'0px 4px 50px 0px rgba(0, 0, 0, 0.25)'}}
+      h={{ base: '17rem', md: '20rem' }}
+      shadow={{
+        base: ' 2px 4px 3px 0px rgba(0, 0, 0, 0.1)',
+        md: '0px 4px 50px 0px rgba(0, 0, 0, 0.25)',
+      }}
     >
       <Flex flexWrap={'wrap'} gap={'4'} my={'8'}>
         {images.map((item: string, index: number) => {
@@ -56,10 +59,10 @@ function CourseCard({
 export default function TopCourses() {
   return (
     <Box>
-      <Text mb={{base:'2',md:'8'}} as={'h2'} textStyle={'h3-bold'}>
+      <Text mb={{ base: '2', md: '8' }} as={'h2'} textStyle={'h3-bold'}>
         Top Courses
       </Text>
-      <SimpleGrid gap={'2rem'} columns={{base:1,md:2,lg:3}}>
+      <SimpleGrid gap={'2rem'} columns={{ base: 1, md: 2, lg: 3 }}>
         <GridItem>
           <CourseCard
             images={[html, css, javascript, react, node, mongodb, python]}

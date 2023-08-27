@@ -29,12 +29,12 @@ export default function WhoWeAre() {
         w={{ base: '93%', md: '90%' }}
         maxW={'7xl'}
         mx={'auto'}
-        alignItems={{base:'flex-start'}}
+        alignItems={{ base: 'flex-start' }}
       >
         <Box flex={1}>
           <img src={group} alt="group" />
         </Box>
-        <Box mt={'6'} ml={{base:'0',md:'8'}} flex={1}>
+        <Box mt={'6'} ml={{ base: '0', md: '8' }} flex={1}>
           <Box position={'relative'}>
             <Text as={'h2'} textStyle={'h3-bold'}>
               Who We Are
@@ -43,13 +43,13 @@ export default function WhoWeAre() {
               <img src={strike} alt="strike" />
             </Box>
           </Box>
-          <Text my={{base:'4',md:"8"}} textStyle={'p-regular'}>
+          <Text my={{ base: '4', md: '8' }} textStyle={'p-regular'}>
             At Meld Tech Academy, we are passionate about empowering individuals with the knowledge
             and skills to thrive in the ever-evolving tech industry. Our team of experienced
             instructors is committed to providing high-quality, hands-on training that prepares you
             for real-world challenges.
           </Text>
-          <Stack spacing={{base:'4',md:'6'}}>
+          <Stack spacing={{ base: '4', md: '6' }}>
             <WhoWeAreItems value="Industry-Leading Instructors" />
             <WhoWeAreItems value="Diverse Course Offerings" />
             <WhoWeAreItems value="Hands-On Learning Experience" />

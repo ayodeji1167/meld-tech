@@ -13,12 +13,12 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   chakra,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { Logo } from '@/components/Logo/Logo';
+import { RoutesEnum } from '@/config/constants/route';
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -68,7 +68,9 @@ export default function WithSubnavigation() {
             spacing={6}
             display={{ base: 'none', lg: 'block' }}
           >
-            <Button variant={'primary'}><Text textStyle={"p-regular"}> Apply Now</Text></Button>
+            <Button variant={'primary'}>
+              <Text textStyle={'p-regular'}> Apply Now</Text>
+            </Button>
           </Stack>
         </Flex>
       </Stack>
@@ -171,8 +173,7 @@ const MobileNav = () => {
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
-                  {/* <Button variant={'primary'}>Apply Now</Button> */}
-
+      {/* <Button variant={'primary'}>Apply Now</Button> */}
     </Stack>
   );
 };
@@ -253,6 +254,6 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: 'Contact',
-    href: '#',
+    href: RoutesEnum.CONTACT,
   },
 ];
