@@ -5,13 +5,16 @@ import { Box } from '@chakra-ui/react';
 import Offer from '../components/Home/Offer';
 import WhoWeAre from '../components/Home/WhoWeAre';
 import CoursesStack from '../components/Home/CoursesStack';
+import Stats from '../components/Home/Stats';
+import WhyUsSection from '../components/Home/WhyUsSection';
+import Faq from '../components/Home/Faq';
 
 export function Home() {
   return (
     <>
       <Head />
       <Box pos={'relative'}>
-        <Box w={{ base: '93%', md: '90%' }} maxW={'8xl'} mx={'auto'}>
+        <Box w={{ base: '93%', md: '90%' }} maxW={'7xl'} mx={'auto'}>
           <Hero />
           <Box
             width={{ base: '5rem', md: '8rem', lg: '13rem' }}
@@ -24,7 +27,12 @@ export function Home() {
           <Offer />
         </Box>
         <WhoWeAre />
-        <CoursesStack />
+        {/* <CoursesStack /> */}
+        <Stats />
+        <Box w={{ base: '93%', md: '90%' }} maxW={'7xl'} mx={'auto'}>
+          <WhyUsSection />
+        </Box>
+        <Faq />
       </Box>
     </>
   );

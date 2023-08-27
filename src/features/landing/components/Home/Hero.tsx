@@ -28,10 +28,10 @@ export default function Hero() {
           software engineering.
         </Text>
 
-        <Button variant={'primary'}>Apply now</Button>
+        <Button variant={'primary'}><Text textStyle={"p-regular"}> Apply Now</Text></Button>
       </Stack>
 
-      <Box flex={1.4} pos={'relative'}>
+      <Box flex={1.1} pos={'relative'}>
         <Box pos={'relative'}>
           <img width={'100%'} src={heroImg} alt="hero" />
         </Box>

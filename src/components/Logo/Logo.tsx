@@ -8,6 +8,7 @@ type LogoProps = ImageProps & {
   text?: ReactNode;
   linkProps?: LinkProps;
   withText?: boolean;
+  removeAcademy?: boolean;
 };
 
 export const Logo = (props: LogoProps) => {
@@ -15,19 +16,19 @@ export const Logo = (props: LogoProps) => {
 
   function PlainLogo() {
     return (
-      <Flex alignItems={'center'}>
+      <Flex alignItems={'center'} gap={props.removeAcademy ? '4':''}>
         <Image src={logo} aria-label={`logo`} {...props} />
         {withText && (
           <Flex
-          flexDirection={'column'}
+            flexDirection={'column'}
             fontWeight={'bold'}
             fontFamily={`'Montserrat', 'sans-serif'`}
             textDecoration={'none'}
             justifyContent={'center'}
-            fontSize={{base:'15px',md:'18px'}}
+            fontSize={{ base: '15px', md: '18px' }}
           >
             <Text>MELDTECH</Text>
-            <Text>ACADEMY</Text>
+            {!props.removeAcademy && <Text>ACADEMY</Text>}
           </Flex>
         )}
       </Flex>

@@ -33,7 +33,7 @@ export default function WithSubnavigation() {
           py={{ base: 2 }}
           align={'center'}
           w={{ base: '93%', md: '90%' }}
-          maxW={'8xl'}
+          maxW={'7xl'}
           mx={'auto'}
         >
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
@@ -68,7 +68,7 @@ export default function WithSubnavigation() {
             spacing={6}
             display={{ base: 'none', lg: 'block' }}
           >
-            <Button variant={'primary'}>Apply Now</Button>
+            <Button variant={'primary'}><Text textStyle={"p-regular"}> Apply Now</Text></Button>
           </Stack>
         </Flex>
       </Stack>

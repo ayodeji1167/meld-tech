@@ -27,13 +27,14 @@ export default function WhoWeAre() {
         gap={'8'}
         justifyContent={'space-between'}
         w={{ base: '93%', md: '90%' }}
-        maxW={'8xl'}
+        maxW={'7xl'}
         mx={'auto'}
+        alignItems={{base:'flex-start'}}
       >
         <Box flex={1}>
           <img src={group} alt="group" />
         </Box>
-        <Box mt={'6'} ml={'8'} flex={1}>
+        <Box mt={'6'} ml={{base:'0',md:'8'}} flex={1}>
           <Box position={'relative'}>
             <Text as={'h2'} textStyle={'h3-bold'}>
               Who We Are

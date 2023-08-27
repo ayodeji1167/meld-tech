@@ -153,6 +153,24 @@ const textStyles = {
     lineHeight: 'auto',
     fontFamily: 'heading',
   },
+  'h6-regular': {
+    fontSize: ['sm', 'md'],
+    fontWeight: 'medium',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h6-semibold': {
+    fontSize: ['sm', 'md'],
+    fontWeight: 'semibold',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
+  'h6-bold': {
+    fontSize: ['sm', 'md'],
+    fontWeight: 'bold',
+    lineHeight: 'auto',
+    fontFamily: 'heading',
+  },
   // =======================BODY =================
   'p-regular': {
     fontSize: ['sm', 'md'],
